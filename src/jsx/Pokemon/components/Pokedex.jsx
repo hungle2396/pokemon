@@ -17,7 +17,7 @@ const Pokedex = () => {
         const response = await pokeAPI.get(url, {
             params: {
                 offset: 0,
-                limit: 100
+                limit: 1100
             }
         });
 
@@ -94,6 +94,32 @@ const Pokedex = () => {
                 </li>
             )
         }
+        // } else if (term === "ucbi") {
+        //     console.log("In ucbi term");
+        //     <li key={pokemon.data.id} className="search__result--item">
+        //         <Link to={`/Ucbi`} className={`search__result--link search__result--link--rainbow`}>
+        //             <figure className="search__pokemon--figure">
+        //                 <img className="search__pokemon--img" src="../../../img/ucbi.jpg" alt="pokemon image" />
+        //             </figure>
+
+        //             <h2 className="search__pokemon--name">Ucbi</h2>
+
+        //             <div className="search__pokemon--types">
+        //                 <div key="Ucbi1" className={`search__pokemon--type search__pokemon--type--fairy`}>
+        //                     That Bitch
+        //                 </div>
+
+        //                 <div key="Ucbi2" className={`search__pokemon--type search__pokemon--type--water`}>
+        //                     Huneeey
+        //                 </div>
+
+        //                 <div key="Ucbi3" className={`search__pokemon--type search__pokemon--type--fighting`}>
+        //                     Gamer
+        //                 </div>
+        //             </div>
+        //         </Link>
+        //     </li>
+        // }
         
     });
 

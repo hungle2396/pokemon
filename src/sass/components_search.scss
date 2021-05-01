@@ -53,6 +53,11 @@
         align-items: center;
         justify-items: center;
 
+        &--rainbow {
+            background-image: linear-gradient(#84d3848a, #e9877694, #b97fdab4, #84d0ddb6, #6d35fcb2) ;
+            box-shadow: 0 0 5rem #96d9d6c0;
+        }
+        
         &--grass {
             background-color: #84d3848a;
             box-shadow: 0 0 5rem #84d3848a;
