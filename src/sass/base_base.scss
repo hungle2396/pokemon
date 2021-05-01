@@ -1,0 +1,26 @@
+// _base.scss
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    line-height: 1.7;
+    background-color: black;
+    color: #e4e4e4 !important;
+}

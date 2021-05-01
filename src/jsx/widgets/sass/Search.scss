@@ -1,0 +1,64 @@
+.search {
+
+    &__container {
+        padding: 2rem 0;
+        grid-row: 1 / 2;
+        grid-column: 2 / 10;
+
+        display: grid;
+        align-items: center;
+        grid-row-gap: 1rem;
+    }
+
+    &__form {
+    
+    }
+
+    &__label {
+        font-size: 2rem !important;
+    }
+
+    &__input {
+        padding: 0 2rem;
+        font-size: 1.6rem !important;
+    }
+
+    &__listing {
+        padding: 2rem 0;
+
+        display: grid;
+        grid-row-gap: 3rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    &__content {
+        grid-column: 1 / 10;
+    }
+
+    &__item--title {
+        color: rgb(171, 120, 238);
+    }
+
+    &__item--description {
+
+    }
+
+    &__item--link {
+        padding: 1rem 4rem;
+        background-color: rgb(142, 74, 231);
+        border-radius: 0.5rem;
+
+        &-1:link,
+        &-1:visited {
+            color: rgb(255, 255, 255);
+        }
+        
+        grid-column: 10 / 11;
+        align-self: center;
+        justify-self: flex-end;
+    }
+}

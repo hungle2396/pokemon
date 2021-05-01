@@ -1,0 +1,19 @@
+.videoitem {
+
+    &__container {
+        margin-bottom: 2rem;
+        cursor: pointer;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__thumbnail img {
+        width: 100%;
+    }
+
+    &__content {
+
+    }
+}

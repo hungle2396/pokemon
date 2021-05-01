@@ -1,0 +1,12 @@
+.accordion__content{color:#8dc955}
+
+.search__container{padding:2rem 0;grid-row:1 / 2;grid-column:2 / 10;display:grid;align-items:center;grid-row-gap:1rem}.search__label{font-size:2rem !important}.search__input{padding:0 2rem;font-size:1.6rem !important}.search__listing{padding:2rem 0;display:grid;grid-row-gap:3rem}.search__item{display:grid;grid-template-columns:repeat(10, 1fr)}.search__content{grid-column:1 / 10}.search__item--title{color:#ab78ee}.search__item--link{padding:1rem 4rem;background-color:#8e4ae7;border-radius:0.5rem;grid-column:10 / 11;align-self:center;justify-self:flex-end}.search__item--link-1:link,.search__item--link-1:visited{color:#fff}
+
+.label{font-size:2rem !important;color:#e4e4e4 !important}
+
+.translate__container{grid-row:2 / 3;grid-column:2 / 10}
+
+*{margin:0;padding:0}*,*::before,*::after{box-sizing:inherit}html{box-sizing:border-box;font-size:62.5%}body{font-family:"Open Sans", sans-serif;font-size:150%;font-weight:600;line-height:1.7;background-color:black;color:#e4e4e4 !important}
+
+.app__container{display:grid;grid-template-rows:minmax(min-content, 10vh) repeat(10, 1fr);grid-template-columns:minmax(0, 1fr) repeat(8, 1fr) minmax(0, 1fr)}
+

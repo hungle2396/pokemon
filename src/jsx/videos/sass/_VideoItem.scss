@@ -1,0 +1,19 @@
+.video__item {
+
+    width: 100%;
+    padding: 1rem 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        margin: 0;
+        cursor: pointer;
+        padding-left: 1rem;
+    }
+}

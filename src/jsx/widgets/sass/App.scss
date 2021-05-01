@@ -1,0 +1,8 @@
+.app {
+
+    &__container {
+        display: grid;
+        grid-template-rows: minmax(min-content, 10vh) repeat(10, 1fr);
+        grid-template-columns: minmax(0, 1fr) repeat(8, 1fr) minmax(0, 1fr);
+    }
+}

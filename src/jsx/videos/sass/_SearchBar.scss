@@ -1,0 +1,47 @@
+.search__bar {
+    
+    grid-column: 2 / 12;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    &__form {
+        width: 80%;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__input__container {
+        display: flex;
+        
+    }
+
+    &__input {
+        width: 80%;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+    }
+
+    &__btn {
+        width: 20%;
+        border: none;
+        background-color: rgb(233, 115, 233);
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        font-weight: 600;
+        transition: all 0.2s;
+        outline: none;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: translateY(3px);
+        }
+    }
+}

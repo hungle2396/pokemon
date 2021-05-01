@@ -1,0 +1,97 @@
+// VARIABLES
+$width: 100px;
+$height:$width;
+
+$main-color: red;
+$secondary-color: white;
+
+$border-color:black;
+$border-width:2px;
+
+$button-width: $width/2.5;
+$button-border-width: 5px;
+$button-border-style:double;
+
+$default-rotation:-45deg;
+
+.wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+   transform: translate(-50%, -50%);
+
+}
+
+.pokeball{
+  // CAREFUL WITH NEWLINES AT INLINE-BLOCK
+  display:inline-block;
+  word-spacing:10px;
+  box-sizing: border-box;
+  width: $width;
+  height: $height;
+  border-radius: 100%;
+  background-color: $main-color;
+  border-style: solid;
+  border-width:$border-width;
+  position: relative;
+  transform:rotateZ($default-rotation);
+  
+  &::before{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    border-color: transparent transparent $secondary-color $secondary-color;
+    border-width: $width/2 - $border-width + 2px;
+    border-radius: 100%;
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  &::after{
+    // button
+    content:"";
+    display:block;
+    
+    box-sizing: border-box;
+    position:absolute;
+    background-color:$secondary-color;
+    top:calc(50% - #{$button-width}/2);
+    left:calc(50% - #{$button-width}/2);
+    width:$button-width;
+    height:$button-width;
+    border-width:$button-border-width;
+    border-style:$button-border-style;
+    border-color:$border-color;
+    position:absolute;
+    border-radius:100%;
+  }
+
+  
+
+  &-loader {
+    animation:rotater;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    
+    @for $i from 1 through 10{
+      &:nth-child(#{$i}){
+        animation-delay:#{$i*300}ms;
+      }
+    }
+  }
+}
+
+@keyframes rotater{
+  0%{
+    transform:rotateZ($default-rotation);
+  }
+  100%{
+    transform:rotateZ($default-rotation + 360deg);
+  }
+}

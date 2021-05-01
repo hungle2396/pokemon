@@ -1,0 +1,14 @@
+.margin {
+    
+    &__bottom--small {
+        margin-bottom: 1rem;
+    }
+
+    &__bottom--medium {
+        margin-bottom: 3rem;
+    }
+
+    &__bottom--large {
+        margin-bottom: 5rem;
+    }
+}

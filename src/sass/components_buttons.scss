@@ -1,0 +1,14 @@
+.btn {
+
+    &__container {
+        position: absolute;
+        top: 5rem;
+        left: 10%;
+    }
+
+    color: black;
+    background-image: linear-gradient(to right, rgb(201, 201, 201), rgb(219, 61, 61));
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    transition: all 0.5s;
+}

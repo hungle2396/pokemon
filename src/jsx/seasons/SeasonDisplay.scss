@@ -1,0 +1,29 @@
+.icon {
+
+    &-left {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    &-right {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.season-display {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.winter {
+    background-color: rgb(107, 107, 219);
+}
+
+.sun {
+    background-color: orange;
+}

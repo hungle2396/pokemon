@@ -1,0 +1,12 @@
+.app {
+
+    &__container {
+        display: grid;
+        grid-template-rows: 10rem 60vw min-content;
+        grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+
+        @media only screen and (max-width: 1000px) {
+            grid-template-rows: 10rem minmax(40rem, 50rem) min-content;
+        }
+    }
+}
