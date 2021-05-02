@@ -47,9 +47,7 @@ const Pokedex = () => {
 
     const onSearchTerm = (event) => {
         event.preventDefault();
-
-        console.log(event.target.value);
-        setTerm(event.target.value);
+        setTerm(event.target.value.toLowerCase());
     };
 
     useEffect(() => {
