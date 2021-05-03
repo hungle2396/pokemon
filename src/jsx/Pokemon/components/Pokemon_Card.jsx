@@ -30,7 +30,7 @@ const Pokemon_Card = ({ pokemonData }) => {
 
             <h2>Height: {pokemonData.height}</h2>
             <h2>Weight: {pokemonData.weight}</h2>
-            <h2>Color: {pokemonData.color} </h2>
+            <h2>Color: {pokemonData.color}</h2>
             <br></br>
             <p>Description: {pokemonData.description}</p>
             <br></br>

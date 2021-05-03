@@ -95,8 +95,6 @@ const Pokemon = () => {
                         <div className="pokemon__container">
                             {render_Pokemons()}
                         </div>
-
-                        
                     </>
                     
                 ) : (
