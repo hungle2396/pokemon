@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
     useParams,
-    Link
+    Link,
+    Redirect
 } from "react-router-dom";
 import axios from "axios";
 
@@ -19,16 +20,16 @@ const Pokemon = () => {
         const get_Pokemon = async () => {
             setLoading(true);
 
-            const pokemon_data = await pokeAPI.get(`pokemon-species/${pokemonId}`);
-
-            const pokemon_Evolution = await pokeAPI.get(pokemon_data.data.evolution_chain.url);
-
-            const data = await Helper.check_Evolution(pokemon_Evolution);
-            
-            console.log(data);
-
-            setPokemonsData(data);
-            
+            try {
+                const pokemon_data = await pokeAPI.get(`pokemon-species/${pokemonId}`);
+                const pokemon_Evolution = await pokeAPI.get(pokemon_data.data.evolution_chain.url);
+                const data = await Helper.check_Evolution(pokemon_Evolution);
+                console.log(data);
+                setPokemonsData(data);
+            } catch(error) {
+                alert("This Pokemon cannot be found at the moment :C")
+            }
+             
             setTimeout(() => {
                 setLoading(false);
             }, 500);

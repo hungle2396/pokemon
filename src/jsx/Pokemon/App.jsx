@@ -10,6 +10,7 @@ import { createBrowserHistory } from "history";
 
 import Pokedex from "./components/Pokedex";
 import Pokemon from "./components/Pokemon";
+import PokemonError from "./components/PokemonError";
 
 const history = createBrowserHistory();
 
@@ -21,6 +22,10 @@ const App = () => {
                     <Switch>
                         <Route exact path="/">
                             <Pokedex />
+                        </Route>
+
+                        <Route exact path="/pokemonerror">
+                            <PokemonError />
                         </Route>
 
                         <Route exact path="/:pokemonId">
